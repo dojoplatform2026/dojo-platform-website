@@ -342,6 +342,57 @@
       color: #6b7280;
     }
 
+    /* GET STARTED */
+
+    .get-started {
+      background: #fff8f3;
+    }
+
+    .get-started-card {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 48px;
+      border-radius: 24px;
+      background: #ffffff;
+      border: 1px solid #f1e5dd;
+      text-align: center;
+      box-shadow: 0 10px 35px rgba(17, 24, 39, 0.06);
+    }
+
+    .get-started-label {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 7px 13px;
+      border-radius: 999px;
+      background: #fff1e8;
+      color: #e86100;
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+
+    .get-started-card h3 {
+      font-size: clamp(30px, 5vw, 42px);
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+
+    .get-started-card p {
+      max-width: 620px;
+      margin: 0 auto 26px;
+      color: #5f6672;
+      font-size: 17px;
+    }
+
+    .coming-soon {
+      display: block;
+      margin-top: 14px;
+      color: #6b7280;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
     /* CONTACT */
 
     .contact {
@@ -461,7 +512,8 @@
       }
 
       .service-card,
-      .contact-card {
+      .contact-card,
+      .get-started-card {
         padding: 28px;
       }
 
@@ -513,6 +565,7 @@
         <a href="#dojo-walk">Dojo Walk</a>
         <a href="#why-dojo">Why Dojo Walk</a>
         <a href="#how-it-works">How it works</a>
+        <a href="#get-started">Get Started</a>
         <a href="#contact">Contact</a>
       </nav>
 
@@ -848,6 +901,41 @@
     </section>
 
 
+    <!-- GET STARTED -->
+
+    <section class="get-started" id="get-started">
+      <div class="container">
+
+        <div class="get-started-card">
+
+          <div class="get-started-label">
+            Get Started
+          </div>
+
+          <h3>
+            Ready for a Dojo Walk?
+          </h3>
+
+          <p>
+            Dojo Walk is being prepared to make
+            the walking experience simple,
+            connected and reliable.
+          </p>
+
+          <a href="#contact" class="button">
+            Get Started
+          </a>
+
+          <span class="coming-soon">
+            Booking is coming soon.
+          </span>
+
+        </div>
+
+      </div>
+    </section>
+
+
     <!-- CONTACT -->
 
     <section class="contact" id="contact">
@@ -908,8 +996,8 @@
           and reliable.
         </p>
 
-        <a href="#dojo-walk" class="button">
-          Dojo Walk
+        <a href="#get-started" class="button">
+          Get Started
         </a>
 
       </div>
