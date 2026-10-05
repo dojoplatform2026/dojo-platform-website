@@ -45,7 +45,9 @@
       margin: 0 auto;
     }
 
-    /* Header */
+    /* =========================
+       HEADER
+    ========================= */
 
     header {
       position: sticky;
@@ -74,16 +76,22 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 26px;
+      gap: 24px;
       font-size: 14px;
       font-weight: 600;
+    }
+
+    .nav-links a {
+      transition: color 0.2s ease;
     }
 
     .nav-links a:hover {
       color: #e86100;
     }
 
-    /* Hero */
+    /* =========================
+       HERO
+    ========================= */
 
     .hero {
       background:
@@ -147,7 +155,9 @@
       transform: translateY(-1px);
     }
 
-    /* Sections */
+    /* =========================
+       SECTIONS
+    ========================= */
 
     section {
       padding: 85px 0;
@@ -170,7 +180,9 @@
       font-size: 17px;
     }
 
-    /* About */
+    /* =========================
+       ABOUT
+    ========================= */
 
     .about {
       background: #ffffff;
@@ -198,7 +210,9 @@
       color: #6b7280;
     }
 
-    /* Dojo Walk */
+    /* =========================
+       DOJO WALK
+    ========================= */
 
     .dojo-walk {
       background: #fff8f3;
@@ -254,7 +268,9 @@
       font-weight: 900;
     }
 
-    /* How it works */
+    /* =========================
+       HOW IT WORKS
+    ========================= */
 
     .steps {
       display: grid;
@@ -291,7 +307,48 @@
       color: #6b7280;
     }
 
-    /* CTA */
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact {
+      background: #f8f9fa;
+    }
+
+    .contact-card {
+      max-width: 850px;
+      padding: 42px;
+      border-radius: 22px;
+      background: #ffffff;
+      border: 1px solid #eeeeee;
+      box-shadow: 0 10px 35px rgba(17, 24, 39, 0.05);
+    }
+
+    .contact-card h3 {
+      font-size: 32px;
+      margin-bottom: 14px;
+    }
+
+    .contact-card p {
+      max-width: 650px;
+      color: #5f6672;
+      font-size: 17px;
+      margin-bottom: 24px;
+    }
+
+    .contact-status {
+      display: inline-block;
+      padding: 9px 14px;
+      border-radius: 8px;
+      background: #fff1e8;
+      color: #e86100;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    /* =========================
+       CTA
+    ========================= */
 
     .cta {
       padding: 85px 0;
@@ -312,7 +369,9 @@
       color: #d1d5db;
     }
 
-    /* Footer */
+    /* =========================
+       FOOTER
+    ========================= */
 
     footer {
       padding: 28px 0;
@@ -337,15 +396,18 @@
       font-size: 14px;
     }
 
-    /* Mobile */
+    /* =========================
+       MOBILE
+    ========================= */
 
     @media (max-width: 760px) {
+
       .nav {
         min-height: 62px;
       }
 
       .nav-links {
-        gap: 14px;
+        gap: 12px;
         font-size: 12px;
       }
 
@@ -370,11 +432,13 @@
         grid-template-columns: 1fr;
       }
 
-      .service-card {
+      .service-card,
+      .contact-card {
         padding: 28px;
       }
 
-      .service-card h3 {
+      .service-card h3,
+      .contact-card h3 {
         font-size: 28px;
       }
 
@@ -383,35 +447,68 @@
         align-items: flex-start;
       }
     }
+
+    @media (max-width: 500px) {
+
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 16px 0;
+      }
+
+      .nav-links {
+        width: 100%;
+        justify-content: space-between;
+        gap: 8px;
+      }
+
+      .hero h1 {
+        font-size: 46px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-  <!-- Header -->
+  <!-- =========================
+       HEADER
+  ========================== -->
 
   <header>
     <div class="container nav">
-      <a href="#home" class="brand">Dojo Platform</a>
+
+      <a href="#home" class="brand">
+        Dojo Platform
+      </a>
 
       <nav class="nav-links">
         <a href="#about">About</a>
         <a href="#dojo-walk">Dojo Walk</a>
         <a href="#how-it-works">How it works</a>
+        <a href="#contact">Contact</a>
       </nav>
+
     </div>
   </header>
 
 
-  <!-- Hero -->
+  <!-- =========================
+       MAIN
+  ========================== -->
 
   <main>
 
+    <!-- HERO -->
+
     <section class="hero" id="home">
       <div class="container">
+
         <div class="hero-content">
 
-          <div class="eyebrow">Dojo Platform</div>
+          <div class="eyebrow">
+            Dojo Platform
+          </div>
 
           <h1>
             Walking made
@@ -419,8 +516,9 @@
           </h1>
 
           <p>
-            Dojo Walk connects customers with a reliable walking
-            service through a simple, technology-powered platform.
+            Dojo Walk connects customers with a reliable
+            walking service through a simple,
+            technology-powered platform.
           </p>
 
           <a href="#dojo-walk" class="button">
@@ -428,40 +526,57 @@
           </a>
 
         </div>
+
       </div>
     </section>
 
 
-    <!-- About -->
+    <!-- ABOUT -->
 
     <section class="about" id="about">
       <div class="container">
 
         <div class="section-title">
-          <h2>One platform. One simple service.</h2>
+
+          <h2>
+            One platform.
+            One simple service.
+          </h2>
 
           <p>
-            Dojo Platform is built to make the walking experience
-            simple, connected and reliable.
+            Dojo Platform is built to make the walking
+            experience simple, connected and reliable.
           </p>
+
         </div>
 
         <div class="about-grid">
 
           <div class="about-card">
-            <h3>Simple</h3>
+
+            <h3>
+              Simple
+            </h3>
+
             <p>
-              A straightforward experience designed around
-              the customer's walking needs.
+              A straightforward experience designed
+              around the customer's walking needs.
             </p>
+
           </div>
 
+
           <div class="about-card">
-            <h3>Connected</h3>
+
+            <h3>
+              Connected
+            </h3>
+
             <p>
-              Customers, walkers and operations are connected
-              through one platform.
+              Customers, walkers and operations are
+              connected through one platform.
             </p>
+
           </div>
 
         </div>
@@ -470,18 +585,23 @@
     </section>
 
 
-    <!-- Dojo Walk -->
+    <!-- DOJO WALK -->
 
     <section class="dojo-walk" id="dojo-walk">
       <div class="container">
 
         <div class="section-title">
-          <h2>Dojo Walk</h2>
+
+          <h2>
+            Dojo Walk
+          </h2>
 
           <p>
             The main walking service from Dojo Platform.
           </p>
+
         </div>
+
 
         <div class="service-card">
 
@@ -489,18 +609,34 @@
             Our Service
           </div>
 
-          <h3>Dojo Walk</h3>
+          <h3>
+            Dojo Walk
+          </h3>
 
           <p>
-            A simple and reliable walking service designed to
-            connect customers with walkers through the Dojo Platform.
+            A simple and reliable walking service
+            designed to connect customers with walkers
+            through the Dojo Platform.
           </p>
 
           <ul class="service-list">
-            <li>Simple booking experience</li>
-            <li>Connected walker service</li>
-            <li>Reliable walk experience</li>
-            <li>Technology-powered operations</li>
+
+            <li>
+              Simple booking experience
+            </li>
+
+            <li>
+              Connected walker service
+            </li>
+
+            <li>
+              Reliable walk experience
+            </li>
+
+            <li>
+              Technology-powered operations
+            </li>
+
           </ul>
 
         </div>
@@ -509,52 +645,123 @@
     </section>
 
 
-    <!-- How It Works -->
+    <!-- HOW IT WORKS -->
 
     <section id="how-it-works">
       <div class="container">
 
         <div class="section-title">
-          <h2>How it works</h2>
+
+          <h2>
+            How it works
+          </h2>
 
           <p>
-            Dojo Walk keeps the experience simple from request
-            to completed walk.
+            Dojo Walk keeps the experience simple
+            from request to completed walk.
           </p>
+
         </div>
+
 
         <div class="steps">
 
           <div class="step">
-            <div class="step-number">1</div>
 
-            <h3>Request</h3>
+            <div class="step-number">
+              1
+            </div>
+
+            <h3>
+              Request
+            </h3>
 
             <p>
-              Request a Dojo Walk through the platform.
+              Request a Dojo Walk through
+              the platform.
             </p>
+
           </div>
 
 
           <div class="step">
-            <div class="step-number">2</div>
 
-            <h3>Connect</h3>
+            <div class="step-number">
+              2
+            </div>
+
+            <h3>
+              Connect
+            </h3>
 
             <p>
-              The platform connects the customer with an available walker.
+              The platform connects the customer
+              with an available walker.
             </p>
+
           </div>
 
 
           <div class="step">
-            <div class="step-number">3</div>
 
-            <h3>Walk</h3>
+            <div class="step-number">
+              3
+            </div>
+
+            <h3>
+              Walk
+            </h3>
 
             <p>
-              Complete the walk through the connected Dojo Walk experience.
+              Complete the walk through the
+              connected Dojo Walk experience.
             </p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="contact">
+      <div class="container">
+
+        <div class="section-title">
+
+          <h2>
+            Contact Dojo Platform
+          </h2>
+
+          <p>
+            Have a question about Dojo Walk?
+            Get in touch with Dojo Platform.
+          </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <div class="service-label">
+            Contact
+          </div>
+
+          <h3>
+            We're here to help.
+          </h3>
+
+          <p>
+            Dojo Walk is being built to provide
+            a simple, connected and reliable
+            walking experience.
+          </p>
+
+          <div class="contact-status">
+            Contact details coming soon
           </div>
 
         </div>
@@ -568,14 +775,17 @@
     <section class="cta">
       <div class="container">
 
-        <h2>The walk starts here.</h2>
+        <h2>
+          The walk starts here.
+        </h2>
 
         <p>
-          Dojo Walk is being built to make walking services
-          simple, connected and reliable.
+          Dojo Walk is being built to make
+          walking services simple, connected
+          and reliable.
         </p>
 
-        <a href="#home" class="button">
+        <a href="#dojo-walk" class="button">
           Dojo Walk
         </a>
 
@@ -585,7 +795,9 @@
   </main>
 
 
-  <!-- Footer -->
+  <!-- =========================
+       FOOTER
+  ========================== -->
 
   <footer>
     <div class="container footer-content">
