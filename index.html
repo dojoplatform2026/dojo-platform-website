@@ -8,7 +8,7 @@
 
   <meta
     name="description"
-    content="Dojo Walk — a simple and reliable walking service powered by Dojo Platform."
+    content="Dojo Walk — a simple and connected walking service powered by Dojo Platform."
   />
 
   <style>
@@ -45,9 +45,7 @@
       margin: 0 auto;
     }
 
-    /* =========================
-       HEADER
-    ========================= */
+    /* HEADER */
 
     header {
       position: sticky;
@@ -89,9 +87,7 @@
       color: #e86100;
     }
 
-    /* =========================
-       HERO
-    ========================= */
+    /* HERO */
 
     .hero {
       background:
@@ -155,9 +151,7 @@
       transform: translateY(-1px);
     }
 
-    /* =========================
-       SECTIONS
-    ========================= */
+    /* SECTIONS */
 
     section {
       padding: 85px 0;
@@ -180,9 +174,7 @@
       font-size: 17px;
     }
 
-    /* =========================
-       ABOUT
-    ========================= */
+    /* ABOUT */
 
     .about {
       background: #ffffff;
@@ -210,9 +202,7 @@
       color: #6b7280;
     }
 
-    /* =========================
-       DOJO WALK
-    ========================= */
+    /* DOJO WALK */
 
     .dojo-walk {
       background: #fff8f3;
@@ -268,9 +258,54 @@
       font-weight: 900;
     }
 
-    /* =========================
-       HOW IT WORKS
-    ========================= */
+    /* WHY DOJO WALK */
+
+    .why-dojo {
+      background: #ffffff;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .why-card {
+      padding: 30px;
+      border: 1px solid #eeeeee;
+      border-radius: 18px;
+      background: #ffffff;
+      transition: 0.2s ease;
+    }
+
+    .why-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(17, 24, 39, 0.06);
+    }
+
+    .why-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      margin-bottom: 18px;
+      border-radius: 12px;
+      background: #fff1e8;
+      color: #e86100;
+      font-weight: 800;
+    }
+
+    .why-card h3 {
+      font-size: 21px;
+      margin-bottom: 8px;
+    }
+
+    .why-card p {
+      color: #6b7280;
+    }
+
+    /* HOW IT WORKS */
 
     .steps {
       display: grid;
@@ -307,9 +342,7 @@
       color: #6b7280;
     }
 
-    /* =========================
-       CONTACT
-    ========================= */
+    /* CONTACT */
 
     .contact {
       background: #f8f9fa;
@@ -346,9 +379,7 @@
       font-weight: 700;
     }
 
-    /* =========================
-       CTA
-    ========================= */
+    /* CTA */
 
     .cta {
       padding: 85px 0;
@@ -369,9 +400,7 @@
       color: #d1d5db;
     }
 
-    /* =========================
-       FOOTER
-    ========================= */
+    /* FOOTER */
 
     footer {
       padding: 28px 0;
@@ -396,9 +425,7 @@
       font-size: 14px;
     }
 
-    /* =========================
-       MOBILE
-    ========================= */
+    /* MOBILE */
 
     @media (max-width: 760px) {
 
@@ -428,6 +455,7 @@
       }
 
       .about-grid,
+      .why-grid,
       .steps {
         grid-template-columns: 1fr;
       }
@@ -471,9 +499,7 @@
 
 <body>
 
-  <!-- =========================
-       HEADER
-  ========================== -->
+  <!-- HEADER -->
 
   <header>
     <div class="container nav">
@@ -485,6 +511,7 @@
       <nav class="nav-links">
         <a href="#about">About</a>
         <a href="#dojo-walk">Dojo Walk</a>
+        <a href="#why-dojo">Why Dojo Walk</a>
         <a href="#how-it-works">How it works</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -493,9 +520,7 @@
   </header>
 
 
-  <!-- =========================
-       MAIN
-  ========================== -->
+  <!-- MAIN -->
 
   <main>
 
@@ -638,6 +663,104 @@
             </li>
 
           </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- WHY DOJO WALK -->
+
+    <section class="why-dojo" id="why-dojo">
+      <div class="container">
+
+        <div class="section-title">
+
+          <h2>
+            Why Dojo Walk?
+          </h2>
+
+          <p>
+            Built around a simple idea:
+            make the walking experience easier and more connected.
+          </p>
+
+        </div>
+
+
+        <div class="why-grid">
+
+          <div class="why-card">
+
+            <div class="why-number">
+              01
+            </div>
+
+            <h3>
+              Simple Experience
+            </h3>
+
+            <p>
+              A straightforward service designed
+              to keep the customer experience easy.
+            </p>
+
+          </div>
+
+
+          <div class="why-card">
+
+            <div class="why-number">
+              02
+            </div>
+
+            <h3>
+              Connected Service
+            </h3>
+
+            <p>
+              Customers and walkers are connected
+              through the Dojo Platform.
+            </p>
+
+          </div>
+
+
+          <div class="why-card">
+
+            <div class="why-number">
+              03
+            </div>
+
+            <h3>
+              Organized Operations
+            </h3>
+
+            <p>
+              Technology helps organize the
+              walking service and its operations.
+            </p>
+
+          </div>
+
+
+          <div class="why-card">
+
+            <div class="why-number">
+              04
+            </div>
+
+            <h3>
+              Reliable Focus
+            </h3>
+
+            <p>
+              Dojo Walk is being built with a focus
+              on a dependable walking experience.
+            </p>
+
+          </div>
 
         </div>
 
@@ -795,9 +918,7 @@
   </main>
 
 
-  <!-- =========================
-       FOOTER
-  ========================== -->
+  <!-- FOOTER -->
 
   <footer>
     <div class="container footer-content">
